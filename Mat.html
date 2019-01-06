@@ -1,0 +1,57 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Keyboard Mat</title>
+	<link rel="stylesheet" type="text/css" href="mat.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.1.1/howler.js"></script>
+  <!--<script type="text/javascript" src="mat1.js"></script>-->
+  <script type="text/javascript">
+  	function btnif()
+  	{
+  	// var button1 = document.getElementById("btn1");
+
+  	// console.log("entered");
+  		//var random = Math.floor(Math.random()*5);
+  		var random = 1;
+	   // if(random)
+	   // {
+		var soundr = new Howl({
+             src : ['sounds/66.mp3']
+		});
+		soundr.play();
+		/*$(window).keyup(function(e){
+          var ans= e.which;
+          if(ans==66)
+          {
+          	var soundc = new Howl({
+             src : ['sounds/correct.mp3']
+		    });
+		soundc.play();
+          }
+          else
+          {
+          	var soundw = new Howl({
+             src : ['sounds/blnt.mp3']
+		    });
+		    soundw.play();
+          }
+
+        }
+
+	  }*/
+  }
+  </script>
+</head>
+<body>
+   <h1><----Press any key from A-Z or 0-9----></h1>
+   	<div id="imageBox" ></div>
+   	<script type="text/javascript" src="mat.js"></script>
+   	<button title="Take a quick alphabets quiz" id="btn1" onclick="btnif();">Alphabets Quiz</button>
+   	<button title="Take a quick numbers quiz" id="btn2">Numbers Quiz</button>
+   	
+
+
+</body>
+</html>
